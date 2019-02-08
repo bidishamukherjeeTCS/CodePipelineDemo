@@ -8,6 +8,13 @@
   <packaging>jar</packaging>
   <name>Message Utility Java Sample App</name>
   <dependencies>
+   <dependencies>
+      <dependency>
+        <groupId>io.vertx</groupId>
+        <artifactId>vertx-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+  </dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

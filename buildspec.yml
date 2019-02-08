@@ -9,7 +9,6 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
-      - mvn package exec:exec@run-app
 artifacts:
   files:
     - target/maven-simplest-3.6.2-fat.jar

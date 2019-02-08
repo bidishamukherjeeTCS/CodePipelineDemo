@@ -11,6 +11,6 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/messageUtil-1.0.jar
+    - target/maven-simplest-3.6.2-fat.jar
     - appspec.yml
   discard-paths: yes

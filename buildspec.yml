@@ -13,4 +13,5 @@ artifacts:
   files:
     - target/maven-simplest-3.6.2-fat.jar
     - appspec.yml
+    - java-start.bat
   discard-paths: yes

@@ -3,3 +3,7 @@ os: windows
 files:
   - source: ./maven-simplest-3.6.2-fat.jar
     destination: /tmp
+hooks:
+  AfterInstall:
+    - location: \java-start.bat
+      timeout: 900

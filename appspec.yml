@@ -7,5 +7,6 @@ files:
     destination: /tmp
 hooks:
   ApplicationStart:
-    - location: /tmp\java-start.bat
+    - location: C:/tmp/java-start.bat
+      runas: administrator
       timeout: 900

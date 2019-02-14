@@ -1,9 +1,16 @@
 version: 0.0
-os: windows
+os: linux
 files:
-  - source: ./maven-simplest-3.6.2-fat.jar
-    destination: /tmp    destination: /tmp
+  - source: maven-simplest-3.6.2-fat.jar
+    destination: /opt/hello
+  - source: java-start.sh
+    destination: /opt/hello
 hooks:
-  AfterInstall:
-    - location: \java-start.bat
+  ApplicationStop:
+    - location: java-stop.sh
+        runas: ec2-user
+      timeout: 900
+  ApplicationStart:
+    - location: java-start.sh
+      runas: ec2-user
       timeout: 900

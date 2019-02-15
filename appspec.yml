@@ -18,11 +18,11 @@ permissions:
     group: ec2-user
     mode: 755
 hooks:
-  ApplicationStop:
-    - location: ./java-stop.sh
-      runas: root
+  AfterInstall:
+    - location: ./shutdown.sh
+      runas: ec2-user
       timeout: 900
   ApplicationStart:
-    - location: ./java-start.sh
+    - location: ./startup.sh
       runas: ec2-user
       timeout: 900

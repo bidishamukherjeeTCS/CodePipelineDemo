@@ -15,4 +15,6 @@ artifacts:
     - appspec.yml
     - java-start.sh
     - java-stop.sh
+    - shutdown.sh
+    - startup.sh
   discard-paths: yes

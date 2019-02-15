@@ -8,7 +8,7 @@ files:
 hooks:
   ApplicationStop:
     - location: java-stop.sh
-        runas: ec2-user
+      runas: ec2-user
       timeout: 900
   ApplicationStart:
     - location: java-start.sh

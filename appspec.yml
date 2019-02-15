@@ -19,10 +19,10 @@ permissions:
     mode: 755
 hooks:
   ApplicationStop:
-    - location: java-stop.sh
-      runas: ec2-user
+    - location: ./java-stop.sh
+      runas: root
       timeout: 900
   ApplicationStart:
-    - location: java-start.sh
+    - location: ./java-start.sh
       runas: ec2-user
       timeout: 900

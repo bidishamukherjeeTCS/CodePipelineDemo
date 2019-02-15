@@ -5,6 +5,8 @@ files:
     destination: /opt/hello
   - source: java-start.sh
     destination: /opt/hello
+  - source: java-stop.sh
+    destination: /opt/hello  
 hooks:
   ApplicationStop:
     - location: java-stop.sh

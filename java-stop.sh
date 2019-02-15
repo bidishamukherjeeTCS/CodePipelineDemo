@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-pkill -F /opt/hello/hello.pid
+if [ -f /opt/hello/hello.pid ]; then
+    pkill -F /opt/hello/hello.pid
+fi

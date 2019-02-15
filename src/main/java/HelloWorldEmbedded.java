@@ -10,6 +10,6 @@ public class HelloWorldEmbedded {
 
   public static void main(String[] args) {
     // Create an HTTP server which simply returns "Hello World!" to each request.
-    Vertx.vertx().createHttpServer().requestHandler(req -> req.response().end("This is a Sample application deployed through AWS CodePipeline version 1.0!")).listen(8080);
+    Vertx.vertx().createHttpServer().requestHandler(req -> req.response().end("This is a Sample application deployed through AWS CodePipeline version 1.1!")).listen(8080);
   }
 }

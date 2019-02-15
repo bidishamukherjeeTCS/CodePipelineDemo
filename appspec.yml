@@ -21,8 +21,8 @@ hooks:
   AfterInstall:
     - location: ./shutdown.sh
       runas: ec2-user
-      timeout: 120
+      timeout: 30
   ApplicationStart:
     - location: ./startup.sh
       runas: ec2-user
-      timeout: 180
+      timeout: 30

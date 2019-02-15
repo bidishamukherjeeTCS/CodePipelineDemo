@@ -8,14 +8,12 @@ files:
   - source: java-stop.sh
     destination: /opt/hello 
 permissions:    
-  - object: /opt/hello/maven-simplest-3.6.2-fat.jar
+  - object: /opt/hello
+    pattern: "*.jar"
     owner: ec2-user
     group: ec2-user
   - object: /opt/hello/java-start.sh
-    owner: ec2-user
-    group: ec2-user
-    mode: 755
-  - object: /opt/hello/java-stop.sh
+    pattern: "*.sh"
     owner: ec2-user
     group: ec2-user
     mode: 755

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 cd /opt/hello
-/opt/hello/java-stop.sh
+/opt/hello/java-stop.sh &

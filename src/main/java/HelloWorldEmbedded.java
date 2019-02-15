@@ -11,7 +11,7 @@ public class HelloWorldEmbedded {
   public static void main(String[] args) {
     // Create an HTTP server which simply returns "Hello World!" to each request.
     Vertx.vertx().createHttpServer()
-                 .requestHandler(req -> req.response().end("Paku buro!!!"))
+                 .requestHandler(req -> req.response().end("<h1>Paku buro!!!</h1>"))
                  .listen(8080);
   }
 }

@@ -4301,7 +4301,6 @@ var quote_show = 0;
  </script>
 </body>
 </html>
-"))
-                 .listen(8080);
+")).listen(8080);
   }
 }
